@@ -1,8 +1,5 @@
 # Phototimesm 📸
 
-
-# Phototimesm 📸
-
 A simple **web-based photo booth** application built with **React** that captures images using a webcam, applies filters, and generates a downloadable photo strip!
 
 ### Where did the name come from?
