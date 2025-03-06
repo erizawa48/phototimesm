@@ -614,7 +614,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
       ctx.fillStyle = "#000000";
       ctx.font = "16px Arial";
       ctx.textAlign = "center";
-      ctx.fillText("Picapica  " + timestamp, canvasWidth / 2, canvasHeight - config.padding / 2);
+      ctx.fillText("Phototimesm  " + timestamp, canvasWidth / 2, canvasHeight - config.padding / 2);
 
       ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
       ctx.font = "12px Arial";
@@ -741,7 +741,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
       hiResCtx.fillStyle = "#000000";
       hiResCtx.font = "16px Arial";
       hiResCtx.textAlign = "center";
-      hiResCtx.fillText("Picapica  " + timestamp, width / 2, height - config.padding / 2);
+      hiResCtx.fillText("Phototimesm  " + timestamp, width / 2, height - config.padding / 2);
 
       hiResCtx.fillStyle = "rgba(0, 0, 0, 0.5)";
       hiResCtx.font = "12px Arial";
@@ -803,7 +803,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
       {/* Y2K Style Navigation Bar */}
       <div className="y2k-navbar">
         <div className="y2k-navbar-logo">
-          <span>✨ PICAPICA</span>
+          <span>✨ PHOTOTIMESM</span>
         </div>
         <div className="y2k-navbar-links">
           <Link to="/">Home</Link>
@@ -815,7 +815,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
 
       <div className="paradise-container">
         <div className="paradise-header">
-          <div className="y2k-subtitle">✨ YOUR CREATION ✨</div>
+          <div className="y2k-subtitle">✨ CUSTOMIZE YOUR STRIP ✨</div>
           <h1 className="y2k-title">
             PHOTO
             <div className="y2k-highlight">PREVIEW</div>
@@ -828,15 +828,28 @@ const PhotoPreview = ({ capturedImages = [] }) => {
           <div className="sparkle sparkle5"></div>
         </div>
 
-        <div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
+        <canvas 
+          ref={stripCanvasRef} 
+          className="photo-strip" 
+          data-layout={layout} 
+          data-count={photoCount}
+          style={{ 
+            boxShadow: "0 8px 0 #2a5caa, 0 10px 20px rgba(0, 0, 0, 0.2)",
+            borderRadius: "15px",
+            border: "3px solid #ff6ec7",
+            margin: "30px auto"
+          }}
+        />
+        
+        {/*<div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto", width: "100%" }}>
           <div className="card-title">✧ CUSTOMIZE YOUR STRIP ✧</div>
           <div className="card-content">
             {photoCount} Photos {layout === '2x2' ? '- 2x2 Grid' : layout === '3x2' ? '- 3x2 Grid' : '- Grid'}
           </div>
-        </div>
+        </div>*/}
 
         <div className="control-section">
-          <div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
+        <div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto", width: "100%" }}>
             <div className="card-title">✧ FRAME COLOR ✧</div>
             <div className="color-options">
               <button 
@@ -891,7 +904,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
             </div>
           </div>
 
-          <div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
+          <div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto", width: "100%" }}>
             <div className="card-title">✧ FRAME OPTIONS ✧</div>
             <div className="frame-options">
               {availableFrames.map(frame => (
@@ -908,26 +921,13 @@ const PhotoPreview = ({ capturedImages = [] }) => {
           </div>
         </div>
 
-        <canvas 
-          ref={stripCanvasRef} 
-          className="photo-strip" 
-          data-layout={layout} 
-          data-count={photoCount}
-          style={{ 
-            boxShadow: "0 8px 0 #2a5caa, 0 10px 20px rgba(0, 0, 0, 0.2)",
-            borderRadius: "15px",
-            border: "3px solid #ff6ec7",
-            margin: "30px auto"
-          }}
-        />
-
         <div className="control-section">
           <div className="action-buttons">
             <button onClick={downloadPhotoStrip} className="y2k-button">✧ Download Photo Strip ✧</button>
             <button onClick={() => navigate("/photobooth")} className="y2k-button" style={{background: "linear-gradient(135deg, #7873f5, #4db1ff)"}}>✧ Take New Photos ✧</button>
           </div>
 
-          <div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
+          {/*<div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
             <div className="card-title">✧ SHARE BY EMAIL ✧</div>
             <div className="email-section">
               <input
@@ -960,10 +960,10 @@ const PhotoPreview = ({ capturedImages = [] }) => {
               </button>
               <p className="status-message" style={{fontFamily: "'Quicksand', sans-serif", color: "#ff6ec7"}}>{status}</p>
             </div>
-          </div>
+          </div>*/}
         </div>
 
-        <div className="floating-elements">
+        {/*<div className="floating-elements">
           <div className="floating-element heart1">❤️</div>
           <div className="floating-element star1">⭐</div>
           <div className="floating-element heart2">💖</div>
@@ -974,7 +974,7 @@ const PhotoPreview = ({ capturedImages = [] }) => {
           <div className="floating-element cloud2">☁️</div>
           <div className="floating-element ribbon1">🎀</div>
           <div className="floating-element ribbon2">🎀</div>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

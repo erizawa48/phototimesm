@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       {/* Y2K Style Navigation Bar */}
       <div className="y2k-navbar">
         <div className="y2k-navbar-logo">
-          <span>✨ PICAPICA</span>
+          <span>✨ PHOTOTIMESM</span>
         </div>
         <div className="y2k-navbar-links">
           <Link to="/">Home</Link>
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
         <div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto" }}>
           <div className="card-title">✧ OUR COMMITMENT ✧</div>
           <div className="card-content">
-            <p>At Picapica, your privacy is a top priority. We do not track, collect, or store any personal data.
+            <p>At Phototimesm, your privacy is a top priority. We do not track, collect, or store any personal data.
             All photos taken are processed locally on your device and are not uploaded or saved to any external server.</p>
             <p>We respect your privacy and are committed to protecting it. No cookies or trackers are used on this site.</p>
           </div>

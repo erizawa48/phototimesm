@@ -10,7 +10,7 @@ const Home = () => {
       {/* New Y2K Style Navigation Bar */}
       <div className="y2k-navbar">
         <div className="y2k-navbar-logo">
-          <span>✨ PICAPICA</span>
+          <span>✨ PHOTOTIMESM</span>
         </div>
         <div className="y2k-navbar-links">
           <Link to="/">Home</Link>
@@ -25,7 +25,7 @@ const Home = () => {
           <div className="y2k-subtitle">✨ CAPTURE YOUR MOMENTS ✨</div>
           <h1 className="y2k-title">
             WELCOME TO
-            <div className="y2k-highlight">PICAPICA</div>
+            <div className="y2k-highlight">&nbsp; PHOTOTIMESM</div>
           </h1>
           
           {/* Sparkle effects */}
@@ -87,16 +87,16 @@ const Home = () => {
         </footer>
 
         <div className="floating-elements">
-          <div className="floating-element heart1">❤️</div>
-          <div className="floating-element star1">⭐</div>
+          <div className="floating-element heart1">💖</div>
+          <div className="floating-element star1">✨</div>
           <div className="floating-element heart2">💖</div>
-          <div className="floating-element star2">✨</div>
+          <div className="floating-element star2">🎀</div>
           <div className="floating-element cloud1">☁️</div>
-          <div className="floating-element star3">⭐</div>
+          <div className="floating-element star3">✨</div>
           <div className="floating-element heart3">💕</div>
           <div className="floating-element cloud2">☁️</div>
           <div className="floating-element ribbon1">🎀</div>
-          <div className="floating-element ribbon2">🎀</div>
+          <div className="floating-element ribbon2">✨</div>
         </div>
       </div>
     </div>

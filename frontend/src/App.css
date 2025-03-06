@@ -90,7 +90,7 @@
 }
 
 .privacy-container h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya', serif;
 }
 
 .privacy-container a:hover {
@@ -130,7 +130,7 @@
 .contact-form h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Alegreya', serif;
   color: #333;
 }
 
@@ -141,7 +141,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Alegreya', serif;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
@@ -508,14 +508,15 @@ button {
 }
 
 .count-button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.2rem;
   padding: 12px 24px;
   border: 2px solid #2a5caa;
   border-radius: 25px;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 600;
+  font-weight: 700;
   color: #2a5caa;
   box-shadow: 3px 3px 0 #ff6ec7;
 }
@@ -589,6 +590,30 @@ button:active {
   margin-top: 15px;
 }
 
+/* Idol Overlays Options */
+.overlay-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.overlay-image {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.overlay-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 110, 199, 0.5);
+}
+
+.overlay-image.selected {
+  border: 3px solid #ff6ec7;
+}
 /* Fix Layout Between Camera and Photo Strip */
 .photo-container {
   display: flex;
@@ -677,7 +702,7 @@ footer a:hover {
 }
 
 .home-container h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 3rem;
   margin: 0;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -904,10 +929,10 @@ footer a:hover {
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 1.4rem;
   color: #2a5caa;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
   border-bottom: 2px dashed #ff6ec7;
@@ -917,7 +942,8 @@ footer a:hover {
 }
 
 .card-content {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
   color: #333;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -944,7 +970,7 @@ footer a:hover {
   padding: 8px 12px;
   margin-bottom: 12px;
   border-left: 3px solid #ff6ec7;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
 }
@@ -984,7 +1010,7 @@ footer a:hover {
   font-size: 0.9rem;
   position: relative;
   z-index: 2;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alegreya', serif;
   letter-spacing: 0.5px;
 }
 
@@ -998,7 +1024,7 @@ footer a:hover {
   display: inline-block;
   margin: 5px;
   transition: all 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -1049,21 +1075,21 @@ footer a:hover {
 
 .heart2 {
   bottom: 30%;
-  left: 20%;
+  left: 10%;
   animation-delay: 2s;
   font-size: 2rem;
 }
 
 .star2 {
   top: 40%;
-  left: 80%;
+  right: 0%;
   animation-delay: 3s;
   font-size: 1.8rem;
 }
 
 .cloud1 {
-  top: 15%;
-  left: 50%;
+  top: 22%;
+  left: 60%;
   animation-delay: 1.5s;
   font-size: 3rem;
 }
@@ -1076,29 +1102,29 @@ footer a:hover {
 }
 
 .heart3 {
-  top: 60%;
+  top: 65%;
   right: 10%;
   animation-delay: 0.5s;
   font-size: 1.5rem;
 }
 
 .cloud2 {
-  bottom: 40%;
-  left: 30%;
+  bottom: 50%;
+  left: 0%;
   animation-delay: 3.5s;
   font-size: 2.5rem;
 }
 
 .ribbon1 {
-  top: 30%;
-  left: 40%;
+  top: 22%;
+  left: 30%;
   animation-delay: 1.2s;
   font-size: 2rem;
 }
 
 .ribbon2 {
-  bottom: 15%;
-  right: 35%;
+  bottom: 20%;
+  right: 75%;
   animation-delay: 2.8s;
   font-size: 1.8rem;
 }
@@ -1224,7 +1250,7 @@ footer a:hover {
 .y2k-navbar-logo {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: #ff6ec7;
@@ -1243,7 +1269,7 @@ footer a:hover {
 }
 
 .y2k-navbar-links a {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alegreya', serif;
   text-decoration: none;
   color: #333;
   font-weight: 600;
@@ -1279,10 +1305,10 @@ footer a:hover {
 
 /* Y2K Typography */
 .y2k-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 3.5rem;
-  font-weight: 800;
-  color: #ff6ec7;
+  font-weight: 700;
+  color: #ffffff;
   text-shadow: 
     3px 3px 0 #2a5caa,
     -1px -1px 0 #fff;
@@ -1292,13 +1318,13 @@ footer a:hover {
 }
 
 .y2k-highlight {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 900;
   background: linear-gradient(135deg, #ff6ec7, #7873f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(3px 3px 0 #2a5caa);
+  filter: drop-shadow(3px 3px 0 #ffffff);
   transform: rotate(-2deg);
   display: inline-block;
   margin: 15px 0;
@@ -1318,7 +1344,7 @@ footer a:hover {
 }
 
 .y2k-subtitle {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: #fff;
@@ -1333,7 +1359,7 @@ footer a:hover {
 }
 
 .y2k-button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   background: linear-gradient(135deg, #ff6ec7, #7873f5);
   color: white;
   font-size: 1.5rem;

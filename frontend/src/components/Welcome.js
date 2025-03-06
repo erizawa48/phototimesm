@@ -14,7 +14,7 @@ const Welcome = () => {
       {/* Y2K Style Navigation Bar */}
       <div className="y2k-navbar">
         <div className="y2k-navbar-logo">
-          <span>✨ PICAPICA</span>
+          <span>✨ PHOTOTIMESM</span>
         </div>
         <div className="y2k-navbar-links">
           <Link to="/">Home</Link>
@@ -26,31 +26,20 @@ const Welcome = () => {
 
       <div className="paradise-container">
         <div className="paradise-header">
-          <div className="y2k-subtitle">✨ CHOOSE YOUR STYLE ✨</div>
-          <h1 className="y2k-title">
-            LET'S GET
-            <div className="y2k-highlight">STARTED!</div>
-          </h1>
-          
-          {/* Sparkle effects */}
-          <div className="sparkle sparkle1"></div>
-          <div className="sparkle sparkle2"></div>
-          <div className="sparkle sparkle3"></div>
-          <div className="sparkle sparkle4"></div>
-          <div className="sparkle sparkle5"></div>
+          <div className="y2k-subtitle">✨ LET'S GET STARTED! ✨</div>
         </div>
 
         <div className="paradise-content">
-          <div className="paradise-card">
-            <div className="card-title">✧ INSTRUCTIONS ✧</div>
-            <div className="card-content">
+          <div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto", width: "100%" }}>
+            <div className="card-title" style={{ textAlign: "center" }}>✧ INSTRUCTIONS ✧</div>
+            <div className="card-content" style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
               <p>You have <strong>3 seconds</strong> for each shot – no retakes!</p>
               <p>Choose your photo layout below:</p>
             </div>
           </div>
         </div>
 
-        <div className="photo-count-selection">
+        <div className="photo-count-selection" >
           <button 
             className={`count-button ${photoOption.count === 3 && photoOption.layout === 'grid' ? 'selected' : ''}`}
             onClick={() => setPhotoOption({ count: 3, layout: 'grid' })}
@@ -77,7 +66,7 @@ const Welcome = () => {
           </button>
         </div>
 
-        <div className="paradise-card" style={{ maxWidth: "600px", margin: "20px auto" }}>
+        <div className="paradise-card" style={{ maxWidth: "800px", margin: "20px auto", width: "100%" }}>
           <div className="card-content">
             After the session, download your digital copy and share the fun!
           </div>
@@ -88,16 +77,16 @@ const Welcome = () => {
         </button>
 
         <div className="floating-elements">
-          <div className="floating-element heart1">❤️</div>
-          <div className="floating-element star1">⭐</div>
+          <div className="floating-element heart1">💖</div>
+          <div className="floating-element star1">✨</div>
           <div className="floating-element heart2">💖</div>
-          <div className="floating-element star2">✨</div>
+          <div className="floating-element star2">🎀</div>
           <div className="floating-element cloud1">☁️</div>
-          <div className="floating-element star3">⭐</div>
+          <div className="floating-element star3">✨</div>
           <div className="floating-element heart3">💕</div>
           <div className="floating-element cloud2">☁️</div>
           <div className="floating-element ribbon1">🎀</div>
-          <div className="floating-element ribbon2">🎀</div>
+          <div className="floating-element ribbon2">✨</div>
         </div>
       </div>
     </div>
