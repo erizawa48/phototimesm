@@ -1,5 +1,4 @@
 # Phototimesm 📸
-![Phototimesm](https://github.com/user-attachments/assets/4a6629c9-0c75-4a3a-a9f5-355712e2a372)
 
 
 # Phototimesm 📸
