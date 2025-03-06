@@ -1,16 +1,18 @@
-# Picapica 📸
-![picapica](https://github.com/user-attachments/assets/4a6629c9-0c75-4a3a-a9f5-355712e2a372)
+# Phototimesm 📸
+![Phototimesm](https://github.com/user-attachments/assets/4a6629c9-0c75-4a3a-a9f5-355712e2a372)
 
+
+# Phototimesm 📸
 
 A simple **web-based photo booth** application built with **React** that captures images using a webcam, applies filters, and generates a downloadable photo strip!
 
 ### Where did the name come from?
-The name **Picapica** comes from a mix of:
-- **"Picture"** - representing photography and capturing moments.
-- The **Picapica** is the sound that cameras make.
-- **Pikachu's playful energy** - symbolizing the fun, fast, and energetic photos!
+The name **Phototimesm** represents:
+- **"Photo"** - capturing moments through photography
+- **"Time"** - preserving moments in time
+- **"SM"** - Social Media, sharing memories with others
 
-Just like Pikachu, **Picapica** brings a spark of excitement to your photos! ⚡✨
+Just like time itself, **Phototimesm** helps you capture and preserve precious moments! ⚡✨
 
 
 ## 🚀 Features
